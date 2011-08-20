@@ -242,8 +242,20 @@ class aMSNCore(object):
         contactsMenu.add_item(addGroupItem)
         contactsMenu.add_item(removeGroupItem)
 
+        viewMenu = MenuItemView(MenuItemView.CASCADE_MENU, label="View")
+        #TODO options for view button
+
+        actionMenu = MenuItemView(MenuItemView.CASCADE_MENU, label="Action")
+        #TODO options for action button
+        
+        helpMenu = MenuItemView(MenuItemView.CASCADE_MENU, label="Help")
+        #TODO options for help button
+        
         menu.add_item(mainMenu)
+        menu.add_item(viewMenu)        
         menu.add_item(contactsMenu)
+        menu.add_item(actionMenu)       
+        menu.add_item(helpMenu)
 
         return menu
 
