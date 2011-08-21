@@ -251,7 +251,7 @@ class aMSNCore(object):
         helpMenu = MenuItemView(MenuItemView.CASCADE_MENU, label="Help")
         #TODO options for help button
         
-        menu.add_item(mainMenu)
+        menu.add_item(mainMenu)    
         menu.add_item(viewMenu)        
         menu.add_item(contactsMenu)
         menu.add_item(actionMenu)       
